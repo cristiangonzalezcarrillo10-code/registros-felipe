@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #2e8b57;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  height: 60px;
+  vertical-align: middle;
+}
+
+nav button {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav button:hover {
+  background: #dcdcdc;
+}
+
+.interfaz {
+  padding: 20px;
+}
+
+.oculto {
+  display: none;
+}
+
+form fieldset {
+  border: 2px solid #2e8b57;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+form legend {
+  font-weight: bold;
+  color: #2e8b57;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background: #2e8b57;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background: #3cb371;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background: #2e8b57;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+table tr:hover {
+  background: #e0ffe0;
+}
+
+table button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table button:hover {
+  background: #cc0000;
+}

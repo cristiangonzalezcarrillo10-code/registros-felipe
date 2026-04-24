@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Servicio Veterinario en Terreno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="veterinaria.png".png" alt="Logo Veterinaria" class="logo">
+    <h1>Servicio Veterinario en Terreno</h1>
+    <nav>
+      <button onclick="mostrarRegistro()">Registrar Paciente</button>
+      <button onclick="mostrarRegistros()">Ver Registros</button>
+    </nav>
+  </header>
+
+  <!-- Interfaz de Registro -->
+  <section id="registro" class="interfaz">
+    <h2>Registro de Pacientes</h2>
+    <form id="formRegistro">
+      <fieldset>
+        <legend>Datos del Dueño</legend>
+        <label>Nombre del dueño:</label>
+        <input type="text" id="dueno" required>
+        <label>Teléfono:</label>
+        <input type="tel" id="telefono" required>
+        <label>Correo:</label>
+        <input type="email" id="correo" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos del Animal</legend>
+        <label>Nombre del animal:</label>
+        <input type="text" id="animal" required>
+        <label>Tipo:</label>
+        <select id="tipo" required>
+          <option value="Perro">Perro</option>
+          <option value="Gato">Gato</option>
+        </select>
+        <label>Edad:</label>
+        <input type="number" id="edad" required>
+        <label>Peso (kg):</label>
+        <input type="number" id="peso" required>
+        <label>Raza:</label>
+        <input type="text" id="raza">
+        <label>¿Es indoor o de afuera?</label>
+        <select id="indoor">
+          <option value="Indoor">Indoor</option>
+          <option value="Exterior">Exterior</option>
+        </select>
+        <label>¿Qué come?</label>
+        <input type="text" id="comida">
+        <label>Vacunas al día:</label>
+        <input type="checkbox" id="vacunas">
+        <label>Antiparasitario al día:</label>
+        <input type="checkbox" id="antiparasitario">
+        <label>Operaciones realizadas:</label>
+        <input type="text" id="operaciones">
+        <label>Alergias:</label>
+        <input type="text" id="alergias">
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos de la Cita</legend>
+        <label>Fecha:</label>
+        <input type="date" id="fecha" required>
+        <label>Hora:</label>
+        <input type="time" id="hora" required>
+      </fieldset>
+
+      <button type="submit">Registrar</button>
+    </form>
+  </section>
+
+  <!-- Interfaz de Registros -->
+  <section id="registros" class="interfaz oculto">
+    <h2>Pacientes Registrados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Dueño</th><th>Teléfono</th><th>Correo</th>
+          <th>Animal</th><th>Tipo</th><th>Edad</th><th>Peso</th>
+          <th>Raza</th><th>Indoor/Exterior</th><th>Comida</th>
+          <th>Vacunas</th><th>Antiparasitario</th>
+          <th>Operaciones</th><th>Alergias</th>
+          <th>Fecha</th><th>Hora</th><th>Acción</th>
+        </tr>
+      </thead>
+      <tbody id="tablaRegistros"></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
